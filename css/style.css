@@ -32,9 +32,11 @@ img{
 }
 
 .container {
-    width: 1158px;
+    /* width: 1158px; */
+    width: 320px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
+    /* padding: 0 15px; */
 }
 
 .head-container,
@@ -53,7 +55,8 @@ img{
 }
 
 .section{
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
     margin: 0 auto ;
 }
 
@@ -181,12 +184,12 @@ img{
 
 .visually-hidden {
     position: absolute;
-    width: 1px;
+    width: 1px; 
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
-    
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -195,15 +198,17 @@ img{
 
 .advant-list{
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    /* flex-direction: column; */
 }
 
 .advant-item{
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    width: 100%;
 }
 
 .icon-container{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -211,20 +216,25 @@ img{
     border: 1px solid #8E8F99;
     background-color: #F4F4FD;
     padding: 24px 100px;
-    margin-bottom: 8px;
-
+    margin-bottom: 8px; */
+    display: none;
 }
 
 .advant-list .advant-subtitle{
     color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2; 
+    /* font-size: 20px; */
+    font-size: 36px;
+    /* font-weight: 500; */
+    font-weight: 700;
+    /* line-height: 1.2;  */
+    line-height: 1.11; 
     letter-spacing: 0.02em;
+    text-align: center;
     margin-bottom: 8px;
 }
 
 .advant-list .advant-text{
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -236,7 +246,9 @@ img{
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    /* gap: 24px; */
+    gap: 72px;
     margin-top: 72px;    
 }
 
@@ -247,6 +259,10 @@ img{
 
 .team-item{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-img{
+    margin: 0 auto;
 }
 
 .text-container{
@@ -739,3 +755,36 @@ img{
     text-decoration-skip-ink: none;
     color: #4D5AE5;
 }
+
+
+
+/* ===========768=========== */
+
+/* @media (min-width: 768px){
+    .container{
+        width: 768px;
+    }
+
+    .advant-list{
+        row-gap: 24px;
+        column-gap: 72px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .advant-item{
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        column-gap: 64px;
+    }
+
+    .team-item{
+        width: calc((100% - 24px) / 2);
+    }
+
+} */
