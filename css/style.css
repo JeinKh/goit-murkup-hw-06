@@ -164,6 +164,7 @@ img{
     pointer-events: none;
     visibility: hidden;
     overflow: auto;
+    z-index: 2;
 }
 
 .close-menu-btn {
