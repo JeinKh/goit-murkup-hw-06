@@ -569,9 +569,9 @@ img{
     /* align-items: baseline; */
 }
 
-.first-part{
-    /* margin-right: 120px; */
-}
+/* .first-part{
+    margin-right: 120px;
+} */
 
 .second-part{
     display: flex;
@@ -646,9 +646,9 @@ img{
     fill: #f4f4fd;
 }
 
-.foot-form-wrap{
-    /* margin-left: 80px; */
-}
+/* .foot-form-wrap{
+    margin-left: 80px;
+} */
 
 .foot-email-title{
     font-weight: 500;
@@ -1148,7 +1148,7 @@ img{
     padding: 100px 0;
 }
 
-.footer-container{
+.footer-container{ 
     align-items: baseline; 
 }
 
@@ -1158,6 +1158,7 @@ img{
 
 .footer-container{
     flex-wrap: nowrap;
+    width: 1125px;
 }
 
 .foot-form{
